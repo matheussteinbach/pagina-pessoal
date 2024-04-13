@@ -1,34 +1,137 @@
-<html>
-    <head lan="pt-BR">
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style.css" media="all">
-        <link rel="shortcut icon" href="" type="image">
+        <link rel="icon" href="imgs/corinthians.png" type="image/x-icon">
         <title> Página Pessoal </title>
+
     </head>
     <body>
         <header>
             <nav>
                 <menu>
                     <li>
-                        <a>Inicio</a>
+                        <a href="#section-home">Home</a>
                     </li>
                     <li>
-                        <a>Interesses</a>
+                        <a href="#section-disciplinas">Disciplinas Cursadas</a>
                     </li>
                     <li>
-                        <a>Links</a>
+                        <a href="#section-interesses">Interesses</a>
+                    </li>
+                    <li>
+                        <a href="#section-links">Links</a>
+                    </li>
+                    <li>
+                        <a href="html_dict.html">Dicionário</a>
                     </li>
                 </menu>
             </nav>
         </header>
         <aside>
             <h1>Matheus Steinbach</h1>
-            <p> Estudante de Sistemas de Informação </p>
+            <img src="imgs/matheus.jpg">
+            <div>
+                <p> Estudante de Sistemas de Informação - UFSC</p> <br>
+                <a href="https://github.com/matheussteinbach">GitHub</a>
+            </div>
         </aside>
         <main>
-            <section>
+            <section id="section-home">
+                <h1> Sobre mim </h1>
+                <img src="imgs/matheus.jpg">
+                <p> Me chamo Matheus Steinbach dos Santos, tenho 19 anos, nasci e 
+                    morei toda minha vida em Florianópolis, Santa Catarina e sou um dos
+                    amantes da inovação e da tecnologia. 
+                </p> <br> <br>
+                <p> No ano de 2022, enquanto estava me formando pelo Ensino Médio no Colégio
+                    Energia, finalmente consegui decidir o caminho que queria seguir, o da
+                    tecnologia. Anteriormente tratado só como hobbie, comecei a encarar essa
+                    área como algo que poderia seguir carreira e que iria gostar de trabalhar 
+                    com. 
+                </p> <br> <br>
+                <p>
+                    No semestre 2023/1, ano seguinte, ingressei no curso 
+                    Sistemas de Informação na Universidade Federal de Santa 
+                    Catarina. Atualmente estou cursando o terceiro semestre e a procura de
+                    uma vaga de estágio para conhecer mais a fundo novos setores nessa área
+                    e desse modo, ser um profissional mais completo e capacitado no futuro.
+                </p>
+            </section>
+            <section id="section-disciplinas">
+                <h1 class="titulos"> Disciplinas Cursadas</h1>
+                <h2> Primeiro Semestre </h2>
+                <ul>
+                    <li><strong>CAD5240-01238 (20231)</strong> - Aspectos Comportamentais do Empreendedor</li>
+                    <li><strong>EGC5015-01238 (20231)</strong> - Teoria Geral de Sistemas</li>
+                    <li><strong>INE5603-01238B (20231)</strong> - Programação Orientada a Objetos I</li>
+                    <li><strong>INE5601-01238A (20231)</strong> - Fundamentos Matemáticos da Informática</li>
+                    <li><strong>INE5602-01238A/B (20231)</strong> - Introdução à Informática</li> <br> <br>
+                </ul>
+                <h2> Segundo Semestre </h2>
+                <ul>
+                    <li><strong>CAD5103-02238 (20232)</strong> - Administração I</li>
+                    <li><strong>EGC5036-02238 (20232)</strong> - Marketing Pessoal e Empreendedorismo</li>
+                    <li><strong>INE5605-02238A (20232)</strong> - Desenvolvimento de Sistemas Orientados a Objetos I</li>
+                    <li><strong>INE5606-02238 (20232)</strong> - Probabilidade e Estatística</li>
+                    <li><strong>INE5607-02238A/B (20232)</strong> - Organização e Arquitetura de Computadores</li> <br> <br>
+                </ul>
+                <h2> Terceiro Semestre </h2>
+                <ul>
+                    <li><strong>EGC5009-03238 (20241)</strong> - Geração de Idéias e Criatividade em Informática</li>
+                    <li><strong>EPS5211-03238A (20241)</strong> - Programação Econômica e Financeira</li>
+                    <li><strong>INE5609-03238A (20241)</strong> - Estruturas de Dados</li>
+                    <li><strong>INE5646-03238B (20241)</strong> - Programação para Web</li>
+                    <li><strong>INE5649-03238 (20241)</strong> - Técnicas Estatísticas de Predição</li>
+                </ul>
+            
+                </section>
+            <section id="section-interesses">
+                <h1 class="titulos">Interesses</h1>
+                <div class="imagens-div">
+                    <p>Recentemente, estou interessado na área de inteligência artifical,
+                        porém, ainda estou no começo dos meus estudos e procuro me aprofundar
+                        ainda mais. <br> <br> </p>
+                        <img src="imgs/python-beloved.gif">
+                </div>
+                <p>No quesito de linguagens, atualmente estudo <strong>Python</strong> para desenvolvimento
+                e também para a parte estatística, assim como o <strong>R</strong>.
+                Aos poucos, o desenvolvimento web está sendo introduzido nos meus 
+                estudos, começando pelo front-end com <strong>HTML, CSS</strong> 
+                e <strong>JavaScript</strong> e futuramente expandindo para o back-end.
+                </p>
                 
             </section>
+            <section id="section-links">
+                <h1 class="titulos">Links</h1>
+                <div class="imagens-div ">
+                    <ul>
+                        <li>
+                            <p><strong>Projetos/Repositórios Interessantes</strong></p> <br>
+                        <li>
+                            <a href="https://github.com/Davitorino/naval-warfare-game">Jogo de Batalha Naval</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/matheussteinbach/pagina-pessoal">Repositório da Página Pessoal</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/matheussteinbach/python-studies">Estudos em Python</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/matheussteinbach/html-studies">Estudos de Front-End</a> <br> <br>
+                        </li>
+                    </ul>
+                    <img src="imgs/mapa_barcos.png">
+                    <img src="imgs/repositorios.png">
+                </div>
+            </section>
         </main>
+        <footer>
+            <p>Contato:</p>
+            <p>Email: matheussteimbach4@gmail.com</p>
+            <a href="https://www.linkedin.com/in/matheussteinbach/">Linkedin</a>
+        </footer>
     </body>
 </html>

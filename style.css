@@ -2,40 +2,170 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header {
-    grid-area: h;
-}
-
-header menu{
-    padding-left: 10%;
+nav menu{
+    position: fixed;
+    padding-left: 20%;
     background-color:cornflowerblue;
     color: white;
     list-style-type: upper-roman;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 80%;
     height: 10%;
+    font-size:20px;
+    z-index: 2;
 }
 
 aside {
-    padding-top: 50px;
-    padding-left: 25px;
-    height: 100%;
-    width: 20%;
+    position: fixed;
+    padding-top: 100px;
+    height: 200%;
+    float: left;
+    width: 250px;
     background-color: cornflowerblue;
     justify-content: center;
+    margin-right:20px;
+    z-index: 1;
 }
 
 aside h1 {
-    font-size: 20px;
+    font-size: 25px;
     color: white;
-    justify-content: center;
+    text-align: center;
 }
 
-aside p {
-    justify-content: center;
+aside div {
+    text-align: center;
     color: white;
+    font-size: 18px;
+}
+
+aside img {
+    height: 14%;
+    padding: 26px;
+    border-radius: 75%;
+}
+
+main {
+    padding-left: 275px;
+    padding-top: 100px;
+        
+    padding-bottom: 50px;
+    display: flex; 
+    flex-direction: column;
+}
+
+main h1 {
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+main p {
+    text-indent: 40px;
+    font-size: 18px;
+}
+
+.titulos {
+    padding-top: 40px;
+}
+
+main h2 {
+    padding-bottom: 10px;
+}
+
+main li {
+    list-style-type: none;
+    text-indent: 40px;  
+}
+
+.imagens-div{
+    display: flex;
+    justify-content: space-between;
+}
+
+#section-interesses img{
+    height: 200px;
+    padding-left: 50px;
+}
+
+#section-links img {
+    height: 210px;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20%;
+    font-size: 18px;
+    background-color:cornflowerblue;
+    width: 80%;
+    bottom: 0;
+    position: fixed;
+    z-index: 3;
+}
+
+@media all and (max-width: 756px) {
+    aside {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    main p {
+        text-indent: 20px;
+    }
+
+    #section-home img {
+        height: 200px;
+        border-radius: 75%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 15px;
+    }
+
+    nav menu {
+        font-size: 12px;
+        list-style-type: none;
+        width: 100%;
+        padding-left: 0%;
+    }
+
+    #section-links img {
+        display: none;
+    }
+
+    .imagens-div img {
+        width: 130px;
+        height: auto;
+        margin-right: 10px;
+    }
+
+    footer {
+        width: 100%;
+        padding-left: 0%;
+        font-size: 12px;
+    }
+
+}
+
+@media all and not (max-width: 756px) {
+    #section-home img {
+        display: none;
+    }
 }
